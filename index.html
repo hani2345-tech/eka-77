@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemrogaman Dasar</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b4b9cad7;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Grid container */
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        /* Activity box styling */
+        .activity-box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 30px;  /* Increased padding */
+            transition: transform 0.3s;
+            height: 450px;  /* Increased height */
+        }
+
+        .activity-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .activity-box img {
+            width: 100%;
+            height: 320px;  /* Increased height */
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .activity-box h2 {
+            margin: 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .activity-box p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Responsiveness for smaller screens */
+        @media (max-width: 1200px) {
+            .activity-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .activity-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .activity-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Pemrogaman Dasar</h1>
+    <div class="activity-grid">
+        <!-- Activity 1 -->
+        <div class="activity-box">
+            <a href="https://www.w3schools.com/tags/tag_a.asp">
+                <img src="foto 1.jpg" alt="bg1">
+                <h2>Algoritma dan logika dasar pemrograman</h2>
+            </a>
+        </div>
+        <!-- Activity 2 -->
+        <div class="activity-box">
+            <a href="https://www.w3schools.com/python/python_intro.asp">
+                <img src="foto 2.jpg" alt="bg2">
+                <h2>Bahasa pemrograman (Python, C, JavaScript)</h2>
+            </a>
+        </div>
+        <!-- Activity 3 -->
+        <div class="activity-box">
+            <a href="https://www.petanikode.com/c-perulangan/">
+                <img src="foto 3.jpg" alt="bg3">
+                <h2>Struktur data, variabel, percabangan, perulangan, fungsi</h2>
+            </a>
+        </div>
+        <!-- Activity 4 -->
+        <div class="activity-box">
+            <a href="https://www.malasngoding.com/membuat-game-snake-dengan-html5-dan-jquery/">
+                <img src="foto 4.jpg" alt="bg5">
+                <h2>Pembuatan program dan web sederhana (HTML, CSS, problem solving)</h2>
+            </a>
+    </div>
+        <!-- Activity 5 -->
+        <div class="activity-box">
+            <a href="https://flexboxfroggy.com/#id">
+                <img src="foto 3.jpg" alt="bg3">
+                <h2>Demo game coding</h2>
+            </a>
+        </div>
+</div>
+
+</body>
+</html>
